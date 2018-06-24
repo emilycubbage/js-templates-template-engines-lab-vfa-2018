@@ -25,6 +25,6 @@ function createPost() {
   var postDiv = document.getElementById("post");
  
   //execute template function with JSON object for the interpolated values
-  var templateHTML = templateFn({ 'comment': comment, 'commenter': commenter });
+  var templateHTML = templateFn({ 'title':title, 'post': body, 'author': author });
   commentsDiv.innerHTML += templateHTML;
 }
