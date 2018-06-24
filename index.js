@@ -26,5 +26,5 @@ function createPost() {
  
   //execute template function with JSON object for the interpolated values
   var templateHTML = templateFn({ 'title':title, 'post': body, 'author': author });
-  commentsDiv.innerHTML += templateHTML;
+  postDiv.innerHTML += templateHTML;
 }
