@@ -20,9 +20,9 @@ function createPost() {
   var postTemplate = document.getElementById("post-template").innerHTML;
  
   //create template function
-  var templateFn = _.template(commentTemplate);
+  var templateFn = _.template(postTemplate);
  
-  var commentsDiv = document.getElementById("comments");
+  var postDiv = document.getElementById("post");
  
   //execute template function with JSON object for the interpolated values
   var templateHTML = templateFn({ 'comment': comment, 'commenter': commenter });
